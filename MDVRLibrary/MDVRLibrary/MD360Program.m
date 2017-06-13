@@ -26,7 +26,11 @@
 }
 
 - (void) use {
-    if(self.mProgramHandle) glUseProgram(self.mProgramHandle);
+    if(self.mProgramHandle)
+    {
+        glUseProgram(self.mProgramHandle);
+        glUniform1i(self.mInterweaveHandle, self.mInterweaveMode);
+    }
 }
 
 - (int) getTextureUniformSize{

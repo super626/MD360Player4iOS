@@ -35,6 +35,9 @@
     
     self.mPositionHandle = glGetAttribLocation(self.mProgramHandle, "a_Position");
     self.mTextureCoordinateHandle = glGetAttribLocation(self.mProgramHandle, "a_TexCoordinate");
+    
+    self.mInterweaveHandle = glGetUniformLocation(self.mProgramHandle, "u_Interweave");
+    self.mInterweaveMode = 1;
 }
 
 - (NSString*) getVertexShader {

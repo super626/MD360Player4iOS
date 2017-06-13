@@ -51,6 +51,9 @@ const GLfloat *MD_IJK_GLES2_getColorMatrix_bt709()
     self.mColorConversionHandle = glGetUniformLocation(self.mProgramHandle, "u_ColorConversion");
     self.mPositionHandle = glGetAttribLocation(self.mProgramHandle, "a_Position");
     self.mTextureCoordinateHandle = glGetAttribLocation(self.mProgramHandle, "a_TexCoordinate");
+    
+    self.mInterweaveHandle = glGetUniformLocation(self.mProgramHandle, "u_Interweave");
+    self.mInterweaveMode = 1;
 }
 
 - (void) use {

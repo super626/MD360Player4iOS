@@ -21,6 +21,8 @@
 @property (nonatomic) int mContentType;
 @property (nonatomic) int* mTextureUniformHandle;
 @property (nonatomic) int mColorConversionHandle;
+@property (nonatomic) int mInterweaveHandle;
+@property (nonatomic) int mInterweaveMode;
 - (void) build;
 - (void) use;
 - (int) getTextureUniformSize;

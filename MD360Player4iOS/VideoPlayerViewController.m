@@ -62,13 +62,16 @@
     [config setContainer:self view:self.view];
     
     // optional
-    [config projectionMode:MDModeProjectionStereoSphere];
+    [config projectionMode:MDModeProjectionPlaneFit];
     [config displayMode:MDModeDisplayNormal];
     [config interactiveMode:MDModeInteractiveTouch];
     [config pinchEnabled:true];
     [config setDirectorFactory:[[CustomDirectorFactory alloc]init]];
     
     self.vrLibrary = [config build];
+    [self.vrLibrary switchDisplayMode:MDModeDisplayNormal];
+    [self.vrLibrary switchProjectionMode:MDModeProjectionPlaneFit];
+    [self.vrLibrary setInterweaveMode:YES];
     /////////////////////////////////////////////////////// MDVRLibrary
     
     [self.player play];

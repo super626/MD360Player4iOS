@@ -38,6 +38,9 @@
     [config pinchEnabled:true];
     
     self.vrLibrary = [config build];
+    [self.vrLibrary setInterweaveMode:YES];
+    [self.vrLibrary switchProjectionMode:MDModeProjectionPlaneFull];
+    [self.vrLibrary switchDisplayMode:MDModeDisplayNormal ];
     /////////////////////////////////////////////////////// MDVRLibrary
    
 }

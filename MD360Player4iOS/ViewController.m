@@ -59,17 +59,17 @@
 }
 
 - (IBAction)onNetworkButton:(id)sender {
-    NSString* url = self.mUrlTextView.text;
+    NSString* url = @"http://172.16.120.144/test.mp4";//self.mUrlTextView.text;
     [self launchAsVideo:[NSURL URLWithString:url]];
 }
 
 - (IBAction)onLocalButton:(id)sender {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"skyrim360" ofType:@"mp4"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"skyrim360" ofType:@"mp4"];//[[NSBundle mainBundle] pathForResource:@"skyrim360" ofType:@"mp4"];
     // NSURL* url = [NSURL URLWithString:@"http://192.168.5.106/vr/stereo.mp4"];
     [self launchAsVideo:[NSURL fileURLWithPath:path]];
 }
 - (IBAction)onImageButton:(id)sender {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"dome_pic" ofType:@"jpg"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"interweave3d" ofType:@"jpg"];
     [self launchAsImage:[NSURL fileURLWithPath:path]];
     //[self launchAsImage:[NSURL URLWithString:@"http://image5.tuku.cn/wallpaper/Landscape%20Wallpapers/8750_2560x1600.jpg"]];
 }

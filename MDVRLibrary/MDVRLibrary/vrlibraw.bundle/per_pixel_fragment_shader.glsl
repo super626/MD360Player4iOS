@@ -9,7 +9,9 @@ uniform samplerExternalOES u_Texture;
   								// triangle per fragment.
 //varying vec3 v_Normal;         	// Interpolated normal for this fragment.
 varying vec2 v_TexCoordinate;   // Interpolated texture coordinate per fragment.
-  
+
+uniform int u_Interweave;
+
 // The entry point for our fragment shader.
 void main()                    		
 {                              
@@ -30,6 +32,14 @@ void main()
     // diffuse = diffuse + 0.3;
 
 	// Multiply the color by the diffuse illumination level and texture value to get final output color.
-    gl_FragColor =  texture2D(u_Texture, v_TexCoordinate);
+    
+    vec2 coord = v_TexCoordinate;
+    ///if (u_Interweave == 1)
+    {
+        float idx = floor(gl_FragCoord.x);
+        float factor = mod(idx, 2.0);
+        coord.x = (factor == 1.0 ? 0.5 * v_TexCoordinate.x : 0.5 * v_TexCoordinate.x + 0.5);
+    }
+    gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);//texture2D(u_Texture, coord);
 }                                                                     	
 

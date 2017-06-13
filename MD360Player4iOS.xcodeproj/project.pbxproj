@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07C5151FE65BFFC99A51B714 /* libPods-MD360Player4iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7FC994052D005F3DEBE78D /* libPods-MD360Player4iOS.a */; };
 		5E0386A61CBBF9CA0087D7AC /* BitmapPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0386A51CBBF9CA0087D7AC /* BitmapPlayer.storyboard */; };
 		5E0386A91CBBFA1C0087D7AC /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0386A81CBBFA1C0087D7AC /* PlayerViewController.m */; };
 		5E0A0BB71CA8146E005F08CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A0BB61CA8146E005F08CC /* main.m */; };
@@ -18,16 +17,19 @@
 		5E0A0BC51CA8146E005F08CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A0BC31CA8146E005F08CC /* LaunchScreen.storyboard */; };
 		5E1EE73C1CBEA63C004E0B79 /* libMDVRLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EE73B1CBEA63C004E0B79 /* libMDVRLibrary.a */; };
 		5E1EE7461CBEAA44004E0B79 /* vrlibraw.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E1EE7451CBEAA44004E0B79 /* vrlibraw.bundle */; };
+		5E4175924C4E1DAD3315A624 /* libPods-MD360Player4iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E64CC1E24588B134BC9808BB /* libPods-MD360Player4iOS.a */; };
 		5E6151C51D278F7D008DAD4E /* dome_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E6151C41D278F7D008DAD4E /* dome_pic.jpg */; };
 		5E66D16D1CF044E20002415F /* BitmapPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66D16C1CF044E20002415F /* BitmapPlayerViewController.m */; };
 		5E66D16F1CF049400002415F /* VideoPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E66D16E1CF049400002415F /* VideoPlayer.storyboard */; };
 		5E66D1721CF049670002415F /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66D1711CF049670002415F /* VideoPlayerViewController.m */; };
 		5EE78DBA1CB4D6E000A7A67D /* skyrim360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5EE78DB91CB4D6E000A7A67D /* skyrim360.mp4 */; };
 		5EE78DE31CB6C89900A7A67D /* bitmap360.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE78DE21CB6C89900A7A67D /* bitmap360.png */; };
+		6FDF72441EEFC27E00CF5318 /* interweave3d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FDF72431EEFC27E00CF5318 /* interweave3d.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B7FC994052D005F3DEBE78D /* libPods-MD360Player4iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MD360Player4iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		266D44994816D289D0904FA6 /* Pods-MD360Player4iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MD360Player4iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MD360Player4iOS/Pods-MD360Player4iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		38E043BD61368FF91FF93A19 /* Pods-MD360Player4iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MD360Player4iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MD360Player4iOS/Pods-MD360Player4iOS.release.xcconfig"; sourceTree = "<group>"; };
 		5E0386A51CBBF9CA0087D7AC /* BitmapPlayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BitmapPlayer.storyboard; sourceTree = "<group>"; };
 		5E0386A71CBBFA1C0087D7AC /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		5E0386A81CBBFA1C0087D7AC /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
@@ -53,8 +55,8 @@
 		5E66D1711CF049670002415F /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
 		5EE78DB91CB4D6E000A7A67D /* skyrim360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyrim360.mp4; sourceTree = "<group>"; };
 		5EE78DE21CB6C89900A7A67D /* bitmap360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitmap360.png; sourceTree = "<group>"; };
-		E4102F3553C15993DDCFAB3D /* Pods-MD360Player4iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MD360Player4iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MD360Player4iOS/Pods-MD360Player4iOS.release.xcconfig"; sourceTree = "<group>"; };
-		F68C89838134F7E604646602 /* Pods-MD360Player4iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MD360Player4iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MD360Player4iOS/Pods-MD360Player4iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6FDF72431EEFC27E00CF5318 /* interweave3d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = interweave3d.jpg; sourceTree = "<group>"; };
+		E64CC1E24588B134BC9808BB /* libPods-MD360Player4iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MD360Player4iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,30 +65,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1EE73C1CBEA63C004E0B79 /* libMDVRLibrary.a in Frameworks */,
-				07C5151FE65BFFC99A51B714 /* libPods-MD360Player4iOS.a in Frameworks */,
+				5E4175924C4E1DAD3315A624 /* libPods-MD360Player4iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00B8F0C046FCCE9409CA8E60 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F68C89838134F7E604646602 /* Pods-MD360Player4iOS.debug.xcconfig */,
-				E4102F3553C15993DDCFAB3D /* Pods-MD360Player4iOS.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5E0A0BA91CA8146E005F08CC = {
 			isa = PBXGroup;
 			children = (
 				5E1EE7451CBEAA44004E0B79 /* vrlibraw.bundle */,
 				5E0A0BB41CA8146E005F08CC /* MD360Player4iOS */,
 				5E0A0BB31CA8146E005F08CC /* Products */,
-				00B8F0C046FCCE9409CA8E60 /* Pods */,
 				A05F50B8DE52F78A16377B27 /* Frameworks */,
+				7E1A4B99FAFECFC8E891C561 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +94,7 @@
 		5E0A0BB41CA8146E005F08CC /* MD360Player4iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6FDF72431EEFC27E00CF5318 /* interweave3d.jpg */,
 				5E6151C41D278F7D008DAD4E /* dome_pic.jpg */,
 				5E1EE7421CBEA708004E0B79 /* MDVRLibrary.h */,
 				5EE78DB91CB4D6E000A7A67D /* skyrim360.mp4 */,
@@ -134,12 +128,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7E1A4B99FAFECFC8E891C561 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				266D44994816D289D0904FA6 /* Pods-MD360Player4iOS.debug.xcconfig */,
+				38E043BD61368FF91FF93A19 /* Pods-MD360Player4iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A05F50B8DE52F78A16377B27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5E1EE73B1CBEA63C004E0B79 /* libMDVRLibrary.a */,
 				5E1EE6CC1CBEA494004E0B79 /* vrlib.framework */,
-				4B7FC994052D005F3DEBE78D /* libPods-MD360Player4iOS.a */,
+				E64CC1E24588B134BC9808BB /* libPods-MD360Player4iOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,12 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E0A0BC91CA8146E005F08CC /* Build configuration list for PBXNativeTarget "MD360Player4iOS" */;
 			buildPhases = (
-				4591FE47D19109C7C15A62E7 /* Check Pods Manifest.lock */,
+				1D96844C0C6889B5E4236117 /* [CP] Check Pods Manifest.lock */,
 				5E0A0BAE1CA8146E005F08CC /* Sources */,
 				5E0A0BAF1CA8146E005F08CC /* Frameworks */,
 				5E0A0BB01CA8146E005F08CC /* Resources */,
-				B78217EBB2C534C7E492F4FB /* Embed Pods Frameworks */,
-				56844440E1E1E8719EEDD840 /* Copy Pods Resources */,
+				9134900F6DC6B9CDE6C454F5 /* [CP] Embed Pods Frameworks */,
+				94C46EBA695A59DA2BD89F59 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,7 +181,7 @@
 				TargetAttributes = {
 					5E0A0BB11CA8146E005F08CC = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 2QC4N95ACW;
+						DevelopmentTeam = X4EA3FJ4GH;
 					};
 				};
 			};
@@ -210,6 +213,7 @@
 				5E0A0BC51CA8146E005F08CC /* LaunchScreen.storyboard in Resources */,
 				5E0A0BC21CA8146E005F08CC /* Assets.xcassets in Resources */,
 				5EE78DE31CB6C89900A7A67D /* bitmap360.png in Resources */,
+				6FDF72441EEFC27E00CF5318 /* interweave3d.jpg in Resources */,
 				5E0A0BC01CA8146E005F08CC /* Main.storyboard in Resources */,
 				5E1EE7461CBEAA44004E0B79 /* vrlibraw.bundle in Resources */,
 				5E6151C51D278F7D008DAD4E /* dome_pic.jpg in Resources */,
@@ -220,49 +224,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4591FE47D19109C7C15A62E7 /* Check Pods Manifest.lock */ = {
+		1D96844C0C6889B5E4236117 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		56844440E1E1E8719EEDD840 /* Copy Pods Resources */ = {
+		9134900F6DC6B9CDE6C454F5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MD360Player4iOS/Pods-MD360Player4iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B78217EBB2C534C7E492F4FB /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MD360Player4iOS/Pods-MD360Player4iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94C46EBA695A59DA2BD89F59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MD360Player4iOS/Pods-MD360Player4iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -385,11 +389,12 @@
 		};
 		5E0A0BCA1CA8146E005F08CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F68C89838134F7E604646602 /* Pods-MD360Player4iOS.debug.xcconfig */;
+			baseConfigurationReference = 266D44994816D289D0904FA6 /* Pods-MD360Player4iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X4EA3FJ4GH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -406,7 +411,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MDVRLibrary/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.moredoo.MD360Player4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moredoo.MD360Player4iOS-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -414,11 +419,12 @@
 		};
 		5E0A0BCB1CA8146E005F08CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4102F3553C15993DDCFAB3D /* Pods-MD360Player4iOS.release.xcconfig */;
+			baseConfigurationReference = 38E043BD61368FF91FF93A19 /* Pods-MD360Player4iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X4EA3FJ4GH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -435,7 +441,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MDVRLibrary/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.moredoo.MD360Player4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moredoo.MD360Player4iOS-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
