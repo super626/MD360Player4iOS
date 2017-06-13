@@ -34,12 +34,12 @@ void main()
 	// Multiply the color by the diffuse illumination level and texture value to get final output color.
     
     vec2 coord = v_TexCoordinate;
-    ///if (u_Interweave == 1)
+    if (u_Interweave == 1)
     {
         float idx = floor(gl_FragCoord.x);
         float factor = mod(idx, 2.0);
         coord.x = (factor == 1.0 ? 0.5 * v_TexCoordinate.x : 0.5 * v_TexCoordinate.x + 0.5);
     }
-    gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);//texture2D(u_Texture, coord);
+    gl_FragColor = texture2D(u_Texture, coord);
 }                                                                     	
 
