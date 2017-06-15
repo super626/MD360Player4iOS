@@ -40,6 +40,11 @@ void main()
         float factor = mod(idx, 2.0);
         coord.x = (factor == 1.0 ? 0.5 * v_TexCoordinate.x : 0.5 * v_TexCoordinate.x + 0.5);
     }
+    else if (u_Interweave == 2)
+    {
+        coord.x = coord.x * 0.5;
+    }
+    
     gl_FragColor = texture2D(u_Texture, coord);
 }                                                                     	
 

@@ -28,7 +28,6 @@
 @property (nonatomic,strong) MDTouchHelper* touchHelper;
 @property (nonatomic,strong) MDSizeContext* sizeContext;
 @property (nonatomic,weak) UIView* parentView;
-@property bool interweaveMode;
 @end
 
 #pragma mark MDVRLibrary
@@ -137,14 +136,14 @@
     return self.projectionStrategyManager.mMode;
 }
 
-- (void) setInterweaveMode: (Boolean)interweaveMode{
+- (void) setInterweaveMode: (int)interweaveMode{
     if (self.program != nil)
-        self.program.mInterweaveMode = (interweaveMode ? 1 : 0);
+        self.program.mInterweaveMode = interweaveMode;
 }
-- (Boolean) getInterweaveMode{
+- (int) getInterweaveMode{
     if (self.program != nil)
-        return self.program.mInterweaveMode == 0 ? NO : YES;
-    return NO;
+        return self.program.mInterweaveMode;
+    return 0;
 }
 
 @end
@@ -161,7 +160,7 @@
 @property (nonatomic,readonly) MDModeProjection projectionMode;
 @property (nonatomic,readonly) bool pinchEnabled;
 @property (nonatomic,readonly) id<MD360DirectorFactory> directorFactory;
-@property bool interweaveMode;
+@property int interweaveMode;
 
 @end
 
@@ -174,7 +173,7 @@
         _displayMode = MDModeDisplayNormal;
         _pinchEnabled = NO;
     }
-    self.interweaveMode = true;
+    self.interweaveMode = 1;
     return self;
 }
 - (void) asVideo:(AVPlayerItem*)playerItem{

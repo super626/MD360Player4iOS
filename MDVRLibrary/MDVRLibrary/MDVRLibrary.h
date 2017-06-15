@@ -72,6 +72,7 @@ typedef NS_ENUM(NSInteger, MDModeProjection) {
 - (void) switchProjectionMode:(MDModeProjection)projectionMode;
 - (MDModeProjection) getProjectionMode;
 
-- (void) setInterweaveMode: (Boolean)interweaveMode;
-- (Boolean) getInterweaveMode;
+// 0 full, 1 3D interweave, 2 half
+- (void) setInterweaveMode: (int)interweaveMode;
+- (int) getInterweaveMode;
 @end

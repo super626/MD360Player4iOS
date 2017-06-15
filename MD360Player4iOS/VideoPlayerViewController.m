@@ -71,7 +71,7 @@
     self.vrLibrary = [config build];
     [self.vrLibrary switchDisplayMode:MDModeDisplayNormal];
     [self.vrLibrary switchProjectionMode:MDModeProjectionPlaneFit];
-    [self.vrLibrary setInterweaveMode:YES];
+    [self.vrLibrary setInterweaveMode:1];
     /////////////////////////////////////////////////////// MDVRLibrary
     
     [self.player play];
