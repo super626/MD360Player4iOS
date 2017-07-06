@@ -49,6 +49,10 @@
     return YES;
 }
 
+- (void)updateImageData:(UIImage*)image{
+    [self texture:image];
+}
+
 -(void) texture:(UIImage*)image{
     
     if (image == nil) {

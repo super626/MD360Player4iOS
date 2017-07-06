@@ -24,6 +24,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+   // self.vrLibrary
+    self.mURL = [NSURL URLWithString:@"http://app.img.3dov.cn/2016/9/08/5B1DB729E06D8BA655F95B1A89FE9BCB.jpg"];
+    SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
+    [downloader downloadImageWithURL:self.mURL options:0
+                            progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                                NSLog(@"progress:%ld/%ld",receivedSize,expectedSize);
+                                // progression tracking code
+                            }
+                           completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+                               if ( image && finished) {
+                                   // do something with image
+                                   [self.vrLibrary updateTexture:image];
+
+                               }
+                           }];
+}
+
 - (void) initPlayer{
     
     /////////////////////////////////////////////////////// MDVRLibrary
@@ -47,6 +65,7 @@
 
 -(void) onProvideImage:(id<TextureCallback>)callback {
     //
+    //self.mURL = [NSURL URLWithString:@"http://app.img.3dov.cn/2016/9/08/5B1DB729E06D8BA655F95B1A89FE9BCB.jpg"];
     SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
     [downloader downloadImageWithURL:self.mURL options:0
                             progress:^(NSInteger receivedSize, NSInteger expectedSize) {

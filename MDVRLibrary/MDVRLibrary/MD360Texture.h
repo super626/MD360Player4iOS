@@ -27,6 +27,7 @@
 
 @interface MDRGBABitmapTexture : MD360Texture<TextureCallback>
 + (MD360Texture*) createWithProvider:(id<IMDImageProvider>) provider;
+- (void)updateImageData:(UIImage*)image;
 @end
 
 @interface MDRGBAVideoTexture : MD360Texture

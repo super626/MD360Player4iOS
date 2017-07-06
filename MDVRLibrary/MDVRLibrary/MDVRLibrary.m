@@ -9,7 +9,6 @@
 #import "MDVRLibrary.h"
 #import "MDGLKViewController.h"
 #import "MD360Renderer.h"
-#import "MD360Texture.h"
 #import "MDInteractiveStrategy.h"
 #import "MDDisplayStrategy.h"
 #import "MDTouchHelper.h"
@@ -17,6 +16,7 @@
 #import "MDAbsObject3D.h"
 #import "MDProjectionStrategy.h"
 #import "MDVRHeader.h"
+#import "MD360Texture.h"
 
 @interface MDVRLibrary()<IAdvanceGestureListener>
 @property (nonatomic,strong) MD360Texture* texture;
@@ -144,6 +144,9 @@
     if (self.program != nil)
         return self.program.mInterweaveMode;
     return 0;
+}
+- (void) updateTexture: (UIImage*)tex{
+    [self.renderer updateTexture:tex];
 }
 
 @end

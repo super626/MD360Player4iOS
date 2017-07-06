@@ -41,6 +41,14 @@
     // nop
 }
 
+- (void) updateTexture: (UIImage*)tex{
+    if ([self.mTexture respondsToSelector:@selector(texture:)])
+    {
+        MDRGBABitmapTexture* texture = (MDRGBABitmapTexture*)self.mTexture;
+        [texture updateImageData:tex];
+    }
+}
+
 - (void) rendererOnCreated:(EAGLContext*)context{
     [GLUtil glCheck:@"glEnable"];
     

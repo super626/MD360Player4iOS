@@ -25,6 +25,7 @@
 
 @interface MD360Renderer : NSObject <MDGLRendererDelegate>
 + (MD360RendererBuilder*) builder;
+- (void) updateTexture: (UIImage*)tex;
 @end
 
 

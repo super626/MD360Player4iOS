@@ -75,4 +75,5 @@ typedef NS_ENUM(NSInteger, MDModeProjection) {
 // 0 full, 1 3D interweave, 2 half
 - (void) setInterweaveMode: (int)interweaveMode;
 - (int) getInterweaveMode;
+- (void) updateTexture: (UIImage*)tex;
 @end
