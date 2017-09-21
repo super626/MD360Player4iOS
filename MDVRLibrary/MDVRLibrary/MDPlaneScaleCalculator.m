@@ -23,12 +23,23 @@ static const float sPlaneScaleBaseValue = 1.0f;
 
 @implementation MDPlaneScaleCalculator
 
+static float ratioScale = 1.0f;
++ (float) textureRatioScale
+{
+    return ratioScale;
+}
++ (void) setTextureRatioScale:(float)scale
+{
+    ratioScale = scale;
+}
+
 - (instancetype)initWithScale:(MDModeProjection) projection sizeContext:(MDSizeContext*)sizeContext {
     self = [super init];
     if (self) {
         self->project = projection;
         self->mViewportWidth = self->mViewportHeight = self->mTextureWidth = self->mTextureHeight = sPlaneScaleBaseValue;
         self.sizeContext = sizeContext;
+        [MDPlaneScaleCalculator setTextureRatioScale:1.0f];
     }
     return self;
 }
@@ -59,7 +70,7 @@ static const float sPlaneScaleBaseValue = 1.0f;
 
 - (void)calculate{
     float viewportRatio = mViewportRatio;
-    float textureRatio = [self getTextureRatio];
+    float textureRatio = [self getTextureRatio] * [MDPlaneScaleCalculator textureRatioScale];
     
     switch (self->project){
         case MDModeProjectionPlaneFull:

@@ -14,6 +14,9 @@
 
 - (instancetype)initWithScale:(MDModeProjection) projection sizeContext:(MDSizeContext*)sizeContext;
 
++ (float) textureRatioScale;
++ (void) setTextureRatioScale:(float)scale;
+
 - (float)getTextureRatio;
 - (void)setViewportRatio:(float)ratio;
 - (void)calculate;
